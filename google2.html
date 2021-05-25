@@ -9,8 +9,19 @@
         nav {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             list-style-type: none;
+            justify-content: space-between;
+        }
+        li {
+            padding: 5px;
+        }
+        .align-left {
+            display: flex;
+            justify-items: left;
+        }
+        .align-right {
+            display: flex;
+            justify-items: right;
         }
         .main {
             display: flex;
@@ -27,6 +38,7 @@
         .search-bar-container {
             display: flex;
             justify-content: center;
+            padding: 15px 0 15px 0;
         }
         #search-bar {
 
@@ -40,12 +52,16 @@
 <body>
     <header>
         <nav>
-            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S">About</a></li>
-            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a></li>
-            <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
-            <li><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products">Google Apps</a></li>
-            <li><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a></li>   
+            <div Class="align-left">
+                <li><a id="about" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S">About</a></li>
+                <li><a id="store" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a></li>
+            </div>
+            <div Class="align-right">
+                <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
+                <li><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
+                <li><a href="https://www.google.com/intl/en/about/products">Google Apps</a></li>
+                <li><a id="signin" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a></li>   
+            </div>
         </nav>
     </header>
     <div Class="main">
