@@ -6,22 +6,33 @@
             display: flex;
             flex-direction: column;
         }
+        header {
+            color: #000;
+            font-size: 13px;
+        }
         nav {
             display: flex;
             flex-direction: row;
             list-style-type: none;
             justify-content: space-between;
+            font-family: arial, sans-serif;
         }
         li {
-            padding: 5px;
+            padding-left: 15px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
         }
         .align-left {
             display: flex;
             justify-items: left;
+            opacity: .75;
         }
         .align-right {
             display: flex;
             justify-items: right;
+            opacity: .85;
         }
         .main {
             display: flex;
@@ -46,6 +57,13 @@
         .search-buttons-container {
             display: flex;
             justify-content: center;
+        }
+        footer {
+            color: #5f6368;
+            font-size: 14px;
+        }
+        .footer-nav {
+            padding-left: 27px;
         }
     </style>
 </head>
@@ -79,14 +97,14 @@
     <footer>
         <nav>
             <div Class="align-left">
-                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQkdQCCA4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a></li>
-                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQktQCCA8&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a></li>
-                <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                <li Class="footer-nav"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQkdQCCA4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a></li>
+                <li Class="footer-nav"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQktQCCA8&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a></li>
+                <li Class="footer-nav"><a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
             </div>
             <div Class="align-right">
-                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQ8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE">Privacy</a></li>
-                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQ8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe">Terms</a></li>
-                <li><a href="">Settings</a></li>
+                <li Class="footer-nav"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQ8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE">Privacy</a></li>
+                <li Class="footer-nav"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjHgYaVsOXwAhWvAp0JHYRECdgQ8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe">Terms</a></li>
+                <li Class="footer-nav"><a href="">Settings</a></li>
             </div>
         </nav>
     </footer>
