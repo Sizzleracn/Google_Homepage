@@ -27,6 +27,20 @@
         .apps-icon {
             height: 30px;
             width: 30px;
+            color: #5f6368;
+        }
+        #signin-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 25px;
+            background-color: rgb(26, 115, 232);
+            border-radius: 2px;
+        }
+        #signin {
+            color: #FFF;
+            text-align: center;
         }
         .align-left {
             display: flex;
@@ -89,7 +103,11 @@
                     </svg>
                     </a>
                 </li>
-                <li><a id="signin" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a></li>   
+                <li>
+                    <div id="signin-box">
+                        <a id="signin" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a>
+                    </div>
+                </li>   
             </div>
         </nav>
     </header>
